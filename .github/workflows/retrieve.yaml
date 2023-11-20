@@ -30,8 +30,8 @@ jobs:
 
           # Parse specific keys from the secret object
           secret_value_phone=$(echo "$secret_object" | jq -r '. | fromjson | .ramesh_phone_model')
-          secret_value_food=$(echo "$secret_object" | jq -r '. | fromjson | .ramesh_food ')
-          secret_value_loc=$(echo "$secret_object" | jq -r '. | fromjson | .location')
+          secret_value_food=$(echo "$secret_object" | jq -r '. | fromjson | .ramesh_food')
+          secret_value_loc=$(echo "$secret_object" | jq -r '. | fromjson | .Ramesh_location')
 
           echo "Secret value phone is: $secret_value_phone"
           echo "Secret value Food is: $secret_value_food"
